@@ -10,11 +10,11 @@ body {
 	margin: 0px;
 	height: 100vh;
 	padding: 0px 40px 0px 40px;
-	background-image: url('../assets/home.png');
+	background-color: var(--dark-blur);
+	background-image: url('../assets/back.png');
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
-
 	font-family: Roboto Arial;
 	font-size: 24px;
 	color: var(--text-color);
