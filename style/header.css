@@ -102,9 +102,9 @@
 	#pages {
 		display: none;
 	}
-	#dark {
+	/* #dark {
 		display: none;
-	}
+	} */
 }
 @media screen and (min-width: 600px) {
 	#ham {
@@ -115,7 +115,7 @@
 #drop-down-menu {
 	position: absolute;
 	right: 0px; top: 125%;
-	width: 60vw; height: 300px;
+	width: 180px; height: 180px;
 	background-color: antiquewhite;
 	border-radius: 14px;
 	border-style: solid;
