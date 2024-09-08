@@ -19,13 +19,13 @@ body {
 
 #page-not-found {
 	position: fixed;
-	top: 50%; left: 50%;
+	top: 50vh; left: 50%;
 	transform: translate(-50%, -50%);
 	color: var(--text-color);
 	font-family: Roboto;
-	font-size: 160px;
+	font-size: calc(100vw * 0.2);
 	text-align: center;
-	line-height: 60px;
+	line-height: calc(6vw);
 	font-weight: 800;
 	opacity: .6;
 	user-select: none; /* Prevents text selection */
@@ -37,11 +37,11 @@ body {
 #text {
 	font-family: Roboto;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: calc(100vw * 0.04);
 }
 
 #home {
-	top: 65%; left: 50%;
+	bottom: 10vh; left: 50%;
 	color: var(--text-color);
 	font-size: 16px;
 	font-weight: 500;

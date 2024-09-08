@@ -1,10 +1,12 @@
 
 :root {
-	--border-color: rgba(211, 211, 211, 0.2);
 	--dark-blue: rgb(29, 31, 39);
-	--text-color: rgb(255, 255, 255);
-	--icon-color: rgb(255, 255, 255);
+	/* --theme-color: rgba(63, 220, 238, 1); */
+	--theme-color: rgb(243, 47, 76);
+	--text-color: rgb(255, 255, 255, 1);
+	--icon-color: rgb(255, 255, 255, 1);
 	--hover-color: rgb(210, 210, 210, 0.1);
 	--active-color: rgb(210, 210, 210, 0.5);
+	--border-color: rgba(211, 211, 211, 0.2);
 }
 /* rgb(119, 217, 235) */
