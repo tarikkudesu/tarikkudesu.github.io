@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.code-block {
+	font-family: "Source Code Pro", monospace;
+	color: white;
+	font-size: 16px;
+	background-color: rgb(50, 74, 102);
+	position: absolute;
+	border-radius: 12px;
+	padding: 20px;
+}
+
+.default {
+	color: #ff87a8;
+}
+
+.string {
+	color: #bba5ff;
+}
+
+.token {
+	color: #9db1ff;
+}
+
+.op {
+	color: white;
+}

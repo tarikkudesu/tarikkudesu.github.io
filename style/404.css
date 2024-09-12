@@ -10,8 +10,9 @@
 body {
 	margin: 0px;
 	height: 100vh;
-	background-color: var(--dark-blur);
-	background-image: url('../assets/back.png');
+	background-color: var(--text-color);
+	background-color: var(--main-color);
+	/* background-image: url('../assets/back.png'); */
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;

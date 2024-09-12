@@ -10,12 +10,17 @@ body {
 	margin: 0px;
 	height: 100vh;
 	padding: 0px 40px 0px 40px;
-	background-color: var(--dark-blur);
-	background-image: url('../assets/back.png');
+	background-color: var(white);
+	/* background-image: url('../assets/back.png'); */
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
 	font-family: Roboto Arial;
 	font-size: 24px;
 	color: var(--text-color);
+}
+
+main {
+	padding: 0px 6vw 0px 6vw;
+	margin-top: 100px;
 }
