@@ -1,0 +1,243 @@
+:root {
+	--theme-color: rgb(75, 255, 180);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border-bottom: 1px solid var(--border-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	margin-right: 8px;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	margin-left: 8px;
+}
+
+#logo,
+#ham-icon,
+#return-icon,
+#theme-icon,
+#github-icon {
+	cursor: pointer;
+	margin: 8px;
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: var(--main-color);
+}
+
+#logo {
+	/* fill: var(--text-color); */
+	/* cursor: pointer; */
+}
+
+#container {
+	margin: 0px 100px;
+	max-width: 600px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#date-created {
+	text-align: center;
+	font-family: RobotoFlex;
+	letter-spacing: 0.7px;
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--text-extra-dimmed-color);
+	opacity: 0.8;
+}
+
+#title {
+	text-align: center;
+	font-family: RobotoSarif;
+	letter-spacing: 2px;
+	line-height: 50px;
+	font-weight: 500;
+	font-size: 40px;
+	color: var(--text-main-color);
+	margin: 20px 0px 40px 0px;
+}
+
+#article-description {
+	text-align: center;
+	font-family: RobotoFlex;
+	letter-spacing: 0.7px;
+	line-height: 20px;
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--text-extra-dimmed-color);
+	margin-bottom: 40px;
+}
+
+.title1 {
+	letter-spacing: 1px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	font-family: RobotoSerif;
+	color: var(--text-main-color);
+	margin: 0px 0px 20px 0px;
+}
+
+.title2 {
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	font-family: RobotoSerif;
+	color: var(--text-main-color);
+	margin: 0px 0px 15px 0px;
+}
+
+.title3 {
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	font-family: RobotoSerif;
+	color: var(--text-main-color);
+	margin: 0px 0px 15px 0px;
+}
+
+.para {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.7px;
+	font-family: RobotoSerif;
+	color: var(--text-dimmed-color);
+	margin: 0px 0px 20px 0px;
+}
+
+.image {
+	width: 100%;
+	margin: 0px 0px 40px 0px;
+}
+
+.dot-list {
+	font-size: 14px;
+	font-weight: 600;
+	/* line-height: 10px; */
+	letter-spacing: 0.7px;
+	font-family: RobotoSerif;
+	color: var(--text-dimmed-color);
+	margin: 0px 0px 10px 40px;
+}
+
+
+li {
+	line-height: 20px;
+}
+
+.code {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: RobotoMono;
+	color: var(--text-dimmed-color);
+	border: 1px solid var(--border-color);
+	background-color: var(--main-color);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 0px 0px 40px 0px;
+}
+
+.inner-code {
+	background-color: var(--main-color);
+	color: var(--text-dimmed-color);
+	letter-spacing: 1px;
+	border-radius: 4px;
+	padding: 5px 10px;
+	font-weight: 600;
+	margin: 0px 5px;
+}
+
+.quote {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: RobotoFlex;
+	color: var(--text-dimmed-color);
+	padding: 4px 0px 4px 20px;
+	border-left: 5px solid var(--text-dimmed-color);
+	margin: 20px 0px 20px 0px;
+}
+
+.inner-bold {
+	font-weight: 800;
+}
+
+#related-projects,
+#tags {
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: RobotoFlex;
+	margin: 80px 0px 15px 0px;
+}
+
+.tag {
+	display: inline;
+	margin: 5px;
+	padding: 6px;
+	font-size: 12px;
+	border-radius: 6px;
+	font-family: RobotoFlex;
+	background-color: var(--main-color);
+	color: var(--text-extra-dimmed-color);
+}
+
+@media screen and (max-width: 600px) {
+	#container {
+		margin: 0px 25px;
+	}
+	#title {
+		font-size: 36px;
+		line-height: 40px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	header {
+		padding: 0px 100px;
+	}
+}
+
+/* text
+	--text-main-color: rgb(0, 0, 0);
+	--text-dimmed-color: rgb(64, 71, 86);
+	--text-extra-dimmed-color: rgb(153, 161, 179);
+	--text-blue-color: rgb(8, 126, 164);
+*/
