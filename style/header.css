@@ -1,0 +1,167 @@
+
+@import url('vars.css');
+
+header {
+	height: 50px;
+	position: fixed;
+	top: 20px; right: 8vw; left: 8vw;
+	padding: 0px 10px 0px 20px;
+	z-index: 100;
+
+	border-radius: 14px;
+	background-color: var(--header-bg-color);
+	backdrop-filter: blur(4px);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--header-border-color);
+
+	user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For IE/Edge */
+}
+
+.header-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-button-a {
+	width: 36px; height: 36px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.logo-button-svg {
+	fill: var(--header-icon-stroke-color);
+}
+
+.header-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+	column-gap: 10px;
+}
+.github-button-a {
+	position: relative;
+	width: 36px; height: 36px;
+	border-radius: 8px;
+	transition: 0.2s;
+}
+.github-button-a:hover {
+	background-color: var(--header-icon-hover-color);
+}
+.github-button-svg {
+	fill: var(--header-icon-stroke-color);
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ********************************************* footer ********************************************* */
+
+footer {
+	font-family: RobotoFlex;
+	color: var(--text-main-color);
+	border-radius: 14px;
+	background-color: var(--header-bg-color);
+	border: 1px solid var(--header-border-color);
+	backdrop-filter: blur(4px);
+	padding: 40px;
+	margin: 40px;
+	display: grid;
+	grid-template-columns: 2fr 3fr 2fr 2fr;
+}
+.email {
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	color: var(--text-main-color);
+	letter-spacing: 1px;
+	margin: 14px 0px;
+	opacity: 0.9;
+	transition: 0.2s;
+}
+.email::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 12px;
+	border-radius: 2px;
+	background-color: var(--main-color);
+	transition: 0.2s;
+}
+.email:hover::after {
+	width: 155px;
+}
+.footer-site {
+	letter-spacing: 1px;
+	margin: 20px 0px;
+}
+.footer-site-link {
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	color: var(--text-main-color);
+	letter-spacing: 1px;
+	margin: 14px 0px;
+	opacity: 0.9;
+	transition: 0.2s;
+}
+.footer-site-link::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 12px;
+	border-radius: 2px;
+	background-color: var(--main-color);
+	transition: 0.2s;
+}
+.footer-site-link:hover::after {
+	width: 55px;
+}
+
+.footer-connect {
+	letter-spacing: 1px;
+	margin: 20px 0px;
+}
+.footer-connect-link {
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	color: var(--text-main-color);
+	letter-spacing: 1px;
+	margin: 14px 0px;
+	opacity: 0.9;
+	transition: 0.1s;
+}
+.footer-connect-link::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 12px;
+	border-radius: 2px;
+	background-color: var(--main-color);
+	transition: 0.2s;
+}
+.footer-connect-link:hover::after {
+	width: 65px;
+}
+
+
+@media screen and (max-width: 600px) {
+	footer {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		margin: 10px;
+	}
+}
