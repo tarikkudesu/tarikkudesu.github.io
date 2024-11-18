@@ -76,7 +76,7 @@ const content = `
 		"description": "It's time to dive into Object Oriented Programming!, This project contains 5 inner projects designed to understand the specifities of the c++ language when compared to C and also understand new concepts like ploymorphism, overloads, inheritance, abstract classes...",
 		"lang": ["Cpp", "Makefile"],
 		"details": "<div class=\\"title-2\\">Project requirements :</div><div class=\\"title-3\\">Module 00 :  Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and \
-some other basic concepts.</div><ul class=\\"list\\"><li class=\\"list-item\\">ex00 : Capitalizing a set of strings.</li><li class=\\"list-item\\">ex01 : Implement a PhoneBook class to store, display, \
+some other basic concepts.</div><ul class=\\"list\\"><li class=\\"list-item\\">ex00 : Capitalizing a set of strings.</li><li class=\\"list-item\\">ex01 : Implement a MobileBook class to store, display, \
 and search for contacts.</li><li class=\\"list-item\\">ex02 : Implement a banking class for manging accounts, opening, depositing, withdrawing, closing.</li></ul><div class=\\"title-3\\">Module 01 : \
 Memory allocation, pointers to members, references, switch statement</div><ul class=\\"list\\"><li class=\\"list-item\\">ex00 : Memory allocation using new.</li><li class=\\"list-item\\">ex01 : Memory \
 allocation using new[].</li><li class=\\"list-item\\">ex02 : References and pointers.</li><li class=\\"list-item\\">ex03 : References and pointers.</li><li class=\\"list-item\\">ex04 : Reading and writing \
@@ -177,6 +177,9 @@ a simple static website in the language of your choice except PHP.</li><li class
 ]
 `;
 
+const DesktopDiv = document.querySelector(`.desktop-timeline`);
+const mobileDiv = document.querySelector(`.mobile-timeline`);
+
 const contentArr = JSON.parse(content);
 const lang = document.querySelector(`.json-lang`);
 const title = document.querySelector(`.json-title`);
@@ -185,6 +188,7 @@ const keyframe1El = document.querySelectorAll(`.keyframe-1`);
 const keyframe2El = document.querySelectorAll(`.keyframe-2`);
 const keyframe3El = document.querySelectorAll(`.keyframe-3`);
 const keyframeEl = [...keyframe1El, ...Array.from(keyframe2El).reverse(), ...keyframe3El];
+const projectDesc = document.querySelector(`.timeline-project-description`);
 const linkCon = document.querySelector('.timeline-button-container');
 const link = document.querySelector('.view-on-github-button');
 const detailsEl = document.querySelector(`.project-details`);
@@ -192,6 +196,7 @@ const moreBtn = document.querySelector(`.more-button`);
 
 let highlightedKeyframeEl = keyframeEl[0];
 let keyframeSelector = 0;
+let view = ``;
 
 const updateProject = (project) => {
 	if (moreBtn.textContent === 'collapse') {
@@ -238,4 +243,21 @@ moreBtn.addEventListener('click', () => {
 		moreBtn.textContent = 'collapse'
 	else
 		moreBtn.textContent = 'Details'
+});
+
+const toggleMobileView = (width) => {
+	if (width < 800) {
+		DesktopDiv.classList.add(`hidden`);
+		mobileDiv.classList.remove(`hidden`);
+		view = `mobile`;
+	} else {
+		DesktopDiv.classList.remove(`hidden`);
+		mobileDiv.classList.add(`hidden`);
+		view = `desktop`;
+	}
+};
+toggleMobileView(window.innerWidth);
+
+window.addEventListener("resize", () => {
+	toggleMobileView(window.innerWidth);
 });

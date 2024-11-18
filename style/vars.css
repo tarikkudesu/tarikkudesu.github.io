@@ -77,15 +77,15 @@ main {
 }
 
 @font-face {
-	font-family: 'RobotoSerif';
-	src: url('../fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf');
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'Cairo';
 	src: url('../fonts/Cairo/Cairo-VariableFont_wght.ttf');
 	font-style: normal;
+}
+@font-face {
+    font-family: "Cubano";
+    src: url("../fonts/Cubano/Cubano.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -153,12 +153,17 @@ html {
 }
 
 .under-developement {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
 	background-color: var(--main-color);
+	border-radius: 20px 20px 0px 0px;
 	color: black;
 	letter-spacing: 1px;
 	font-family: Cairo;
 	text-align: center;
 	font-weight: 800;
 	font-size: 20px;
-	padding: 40px 0px;
+	padding: 10px 20px;
+	z-index: 1000;
 }
