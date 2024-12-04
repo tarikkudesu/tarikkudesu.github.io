@@ -1,5 +1,5 @@
 
-@import url('vars.css');
+@import url('style/vars.css');
 
 .sec-1 {
 	text-align: start;
@@ -10,10 +10,8 @@
 	grid-template-columns: 5fr 4fr;
 	gap: 40px;
 }
-
 .sec-1-1 {
-	padding-top: 80px;
-	padding-left: 20px;
+	padding: 80px 20px 0px 20px;
 }
 .sec-1-2 {
 	height: 100%;
@@ -71,32 +69,40 @@
 .school-1337:hover {
 	text-decoration: underline;
 }
+.button-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
 .about-me-button,
+.writings-button,
 .projects-button {
-	display: inline-block;
 	font-family: RobotoFlex;
 	color: var(--text-main-color);
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-size: 12px;
-	padding: 8px 30px;
-	margin-right: 10px;
+	padding: 10px 30px;
+	margin: 0px 10px 10px 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 8px;
 	border-color: var(--border-color);
+	text-wrap: nowrap;
+	text-align: center;
 	transition: 0.2s;
 	cursor: pointer;
 	opacity: 0.7;
 }
-.about-me-button:hover ,
+.about-me-button:hover,
+.writings-button:hover,
 .projects-button:hover {
 	transform: scale(102%);
 	background-color: var(--main-dimmed-color);
 	border-color: var(--main-color);
 	opacity: 1;
 }
-.about-me-button:active ,
+.about-me-button:active,
+.writings-button:active,
 .projects-button:active {
 	transform: scale(101%);
 }
@@ -141,7 +147,6 @@
 	line-height: 26px;
 	color: var(--text-extra-dimmed-color);
 }
-
 
 .sec-2-2 {
 	margin: 80px 0px;
@@ -194,6 +199,12 @@
 		line-height: 45px;
 	}
 	.sec-2-2 {
+		grid-template-columns: 1fr;
+	}
+	.button-grid {
+		width: 200px;
+		margin: auto;
+		display: grid;
 		grid-template-columns: 1fr;
 	}
 }

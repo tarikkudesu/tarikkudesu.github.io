@@ -1,0 +1,73 @@
+
+@import url('vars.css');
+
+
+footer {
+	color: var(--text-dimmed-color);
+	background-color: var(--header-bg-color);
+	border: 1px solid var(--header-border-color);
+	backdrop-filter: blur(4px);
+    font-family: sans-serif;
+	border-radius: 14px;
+    text-align: center;
+	padding: 40px;
+	margin: 40px;
+}
+
+.footer-fix-an-issue {
+    margin: 12px 0px;
+}
+.footer-github-link {
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: var(--text-blue-color);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.footer-github-link:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.footer-need-help {
+    margin: 12px 0px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.footer-email {
+    color: var(--text-main-color);
+    text-decoration: none;
+    font-weight: 800;
+}
+.footer-email:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.footer-social-link {
+    margin: 0px 4px;
+    text-decoration: none;
+    color: var(--text-dimmed-color);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.footer-social-link:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.footer-copyright {
+    margin: 12px 0px;
+}
+@media screen and (max-width: 800px) {
+    footer {
+        margin: 10px;
+        padding: 20px;
+    }
+}

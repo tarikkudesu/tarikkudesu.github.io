@@ -16,12 +16,13 @@ html {
 body {
 	background-color: var(--bg-color);
 	position: relative;
+    padding-bottom: 20px;
 }
 
 main {
 	width: 100%;
 	margin: 80px auto;
-	max-width: 1200px;
+	max-width: 1000px;
 	padding: 60px;
 	color: var(--text-main-color);
 	font-family: RobotoFlex;
@@ -60,59 +61,53 @@ main {
 
 @font-face {
 	font-family: 'RobotoFlex';
-	src: url('../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+	src: url('../assets/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'ArchivoBlack';
-	src: url('../fonts/Archivo_Black/ArchivoBlack-Regular.ttf');
+	src: url('../assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf');
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'RobotoMono';
-	src: url('../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+	src: url('../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'Cairo';
-	src: url('../fonts/Cairo/Cairo-VariableFont_wght.ttf');
+	src: url('../assets/fonts/Cairo/Cairo-VariableFont_wght.ttf');
 	font-style: normal;
 }
 @font-face {
     font-family: "Cubano";
-    src: url("../fonts/Cubano/Cubano.ttf") format("truetype");
+    src: url("../assets/fonts/Cubano/Cubano.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
 	--header-bg-color: rgba(28, 29, 31, 0.6);
-	/* --header-bg-color: rgb(35, 39, 47, 0.6); */
 	--header-icon-stroke-color: rgb(235, 236, 240);
 	--header-icon-hover-color: rgb(45, 50, 59);
 	--header-border-color: rgb(235, 236, 240, 0.4);
 	
 	/* --bg-color: rgb(4, 8, 13); */
-	--bg-color: rgb(21, 22, 32);
+	/* --bg-color: rgb(21, 22, 32); */
+	--bg-color: rgb(35, 40, 47);
 	--bg-dimmed-color: rgba(52, 78, 100, 0.4);
-	/* --main-color: rgb(17, 153, 251); */
-	/* --main-dimmed-color: rgba(29, 130, 202, 0.12); */
-	/* --main-color: rgb(211, 51, 62);
-	--main-dimmed-color: rgba(211, 51, 62, 0.1); */
+
 	--main-color: rgb(255, 183, 16);
-	--main-dimmed-color: rgba(255, 183, 16, 0.1);
+	--main-dimmed-color: rgba(226, 178, 64, 0.1);
 	--main-shadow-color: rgb(255, 183, 16, 0.4);
 	
-	--code-bg-color: rgba(53, 52, 67, 0.434);
-	--code-color: rgb(255, 255, 255);
+	--code-bg-color: rgb(48, 54, 66);
+	--code-color: rgb(208, 215, 221);
 	
 	--text-main-color: rgb(246, 247, 249);
-	--text-dimmed-color: rgb(207, 209, 213);
+	--text-dimmed-color: rgb(210, 215, 223);
 	--text-extra-dimmed-color: rgb(137, 139, 145);
-	--text-blue-color: rgb(8, 126, 164);
+	--text-blue-color: rgb(80, 130, 238);
 	
 	--hover-color: rgb(28, 28, 28);
 	--border-color: rgb(235, 236, 240, 0.4);
