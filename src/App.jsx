@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from './Header.jsx'
 
 function App() {
   return (
@@ -6,10 +7,6 @@ function App() {
       <Header />
     </>
   );
-}
-
-function Header() {
-  return <header className="header"></header>;
 }
 
 export default App;
